@@ -17,4 +17,4 @@ ShareGPT-ish styled (they're larger in file size):
 - [XeTute/TypaRP-12x2k](https://huggingface.co/datasets/XeTute/TypaRP-12x2k)
 
 
-**Happy coding**
+In total, that leads to ~73k reported samples generated using SyntheticAlpaca. **Happy coding**
