@@ -85,15 +85,15 @@ def lineinput(prompt):
 def getinputs(chunksize, topics, systemprompt, endpoint, model, apikey, maxinput):
     try:
         msg = []
-        prompt = f"Generate {chunksize} highly diverse/versatile text-inputs and wrap them strictly in a Python list ([\"input\", ...]), each relevant to:\n{topics}"
-        if (len(systemprompt) > 0):
+        prompt = f"Generate {chunksize} highly diverse/versatile text-inputs and wrap them strictly in a Python string (with "\n" instead of an actual newline) list ([\"input\", ...]), each relevant to:\n{topics}"
+        if (len(systemprompt) > 1):  # newline
             msg.append({ "role": "system", "content": systemprompt } )
         msg.append({ "role": "user", "content": prompt })
 
         inputs = extract_list(generate(endpoint, model, apikey, msg, 1.3, maxinput, True))
         return inputs
     except:
-        print("\r>> Failed to get inputs, re-trying...")
+        print("\r>> Failed to get inputs, re-trying...\r")
         return getinputs(chunksize, topics, systemprompt, endpoint, model, apikey, maxinput)
 
 def inline(string):
@@ -138,7 +138,7 @@ def main():
         unique_new = [item for item in new_batch if item not in inputs]
         unique_new = unique_new[:needed]
         inputs.extend(unique_new)
-        print(f"\r>> Collected {len(inputs)}/{samples} inputs.", end="")
+        print(f"\r>> Collected {len(inputs)}/{samples} inputs.", end="\r")
 
     if (len(inputs) > samples):
         inputs = inputs[:samples]
