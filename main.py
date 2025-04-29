@@ -85,7 +85,7 @@ def lineinput(prompt):
 def getinputs(chunksize, topics, systemprompt, endpoint, model, apikey, maxinput):
     try:
         msg = []
-        prompt = f"Generate {chunksize} highly diverse/versatile text-inputs and wrap them strictly in a Python string (with "\n" instead of an actual newline) list ([\"input\", ...]), each relevant to:\n{topics}"
+        prompt = f"Generate {chunksize} highly diverse/versatile text-inputs and wrap them strictly in a Python string (with \"\n\" instead of an actual newline) list ([\"input\", ...]), each relevant to:\n{topics}"
         if (len(systemprompt) > 1):  # newline
             msg.append({ "role": "system", "content": systemprompt } )
         msg.append({ "role": "user", "content": prompt })
