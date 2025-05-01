@@ -18,5 +18,5 @@ ShareGPT-ish styled (they're larger in file size):
 - [Hamzah-Asadullah/Vibin-GPT4o](https://huggingface.co/datasets/Hamzah-Asadullah/Vibin-GPT4o)
 - [XeTute/TypaRP-12x2k](https://huggingface.co/datasets/XeTute/TypaRP-12x2k)
 
-In total, that leads to ~40k reported samples generated using SyntheticAlpaca. If you want your dataset to be displayed here, you may open an GitHub issue.  
+In total, that leads to ~44k reported samples generated using SyntheticAlpaca. If you want your dataset to be displayed here, you may open an GitHub issue.  
 **Happy coding.**
