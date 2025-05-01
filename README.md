@@ -8,6 +8,7 @@ Alpaca styled:
 - [Hamzah-Asadullah/TA-Shiki-2k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-Shiki-2k)
 - [Hamzah-Asadullah/TA-4k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-4k)
 - [Hamzah-Asadullah/TA-WQS-8k](https://hf.co/datasets/Hamzah-Asadullah/TA-WQS-8k)
+- [XeTute/TA-Engineering-4k](https://huggingface.co/datasets/XeTute/TA-Engineering-4k)
 - [XeTute/TA-8k](https://huggingface.co/datasets/XeTute/TA-8k)
 - [XeTute/TA-SS-15k](https://huggingface.co/datasets/XeTute/TA-SS-15k)
 
