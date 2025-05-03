@@ -4,7 +4,7 @@ import json
 import re
 import ast
 
-chunksize = 4
+chunksize = 32
 alpaca = True
 convlength = 12
 
@@ -42,7 +42,7 @@ def extract_list(response_text):
 pollseed = 0
 def generate(endpoint, model, key, msg, temperature, maxlength, recursion=True):
     global pollseed
-    payload = { "temperature": temperature, "max_completion_tokens": maxlength, "messages": msg, "model": model }
+    payload = { "temperature": temperature, "max_completion_tokens": maxlength, "messages": msg, "model": model, "frequency_penalty": 1.25 }
     headers = { "Content-Type": "application/json", "Authorization": f"Bearer {key}" }
     
     try:
