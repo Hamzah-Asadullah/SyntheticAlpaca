@@ -12,6 +12,7 @@ Alpaca styled:
 - [XeTute/TA-8k](https://huggingface.co/datasets/XeTute/TA-8k) (deleted)
 - [XeTute/TA-SS-15k](https://huggingface.co/datasets/XeTute/TA-SS-15k) (deleted)
 
+You can find a merged `data.json` file of all deleted (including TA-Shiki-2k though) [here](https://huggingface.co/Hamzah-Asadullah/Failed-FPFT-0.6B/raw/main/data.json).  
 ShareGPT-ish styled (they're larger in file size):
 
 - [Hamzah-Asadullah/TypaRP-16x1k](https://huggingface.co/datasets/Hamzah-Asadullah/TypaRP-16x1k)
