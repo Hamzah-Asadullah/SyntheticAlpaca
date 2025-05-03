@@ -6,16 +6,16 @@ A lightweight script to generate and scrape LM text generations. Getting up and 
 Alpaca styled:
 
 - [Hamzah-Asadullah/TA-Shiki-2k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-Shiki-2k)
-- [Hamzah-Asadullah/TA-4k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-4k)
-- [Hamzah-Asadullah/TA-WQS-8k](https://hf.co/datasets/Hamzah-Asadullah/TA-WQS-8k)
-- [XeTute/TA-Engineering-4k](https://huggingface.co/datasets/XeTute/TA-Engineering-4k)
-- [XeTute/TA-8k](https://huggingface.co/datasets/XeTute/TA-8k)
-- [XeTute/TA-SS-15k](https://huggingface.co/datasets/XeTute/TA-SS-15k)
+- [Hamzah-Asadullah/TA-4k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-4k) (deleted)
+- [Hamzah-Asadullah/TA-WQS-8k](https://hf.co/datasets/Hamzah-Asadullah/TA-WQS-8k) (deleted)
+- [XeTute/TA-Engineering-4k](https://huggingface.co/datasets/XeTute/TA-Engineering-4k) (deleted)
+- [XeTute/TA-8k](https://huggingface.co/datasets/XeTute/TA-8k) (deleted)
+- [XeTute/TA-SS-15k](https://huggingface.co/datasets/XeTute/TA-SS-15k) (deleted)
 
 ShareGPT-ish styled (they're larger in file size):
 
 - [Hamzah-Asadullah/TypaRP-16x1k](https://huggingface.co/datasets/Hamzah-Asadullah/TypaRP-16x1k)
-- [Hamzah-Asadullah/Vibin-GPT4o](https://huggingface.co/datasets/Hamzah-Asadullah/Vibin-GPT4o)
+- [Hamzah-Asadullah/Vibin-GPT4o](https://huggingface.co/datasets/Hamzah-Asadullah/Vibin-GPT4o) (deleted)
 - [XeTute/TypaRP-12x2k](https://huggingface.co/datasets/XeTute/TypaRP-12x2k)
 
 In total, that leads to ~44k reported samples generated using SyntheticAlpaca. If you want your dataset to be displayed here, you may open an GitHub issue.  
