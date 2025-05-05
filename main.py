@@ -101,7 +101,7 @@ def inline(string):
 
 def maxlength(string, max):
     if (len(string) > max):
-        string = string[:max - 3] + "..."
+        string = string[:max - 3] + ".."
     return string
 
 def inverseroles(conversation):
@@ -125,13 +125,13 @@ def main():
     data = []
     inputs = []
 
-    print(">> Collecting inputs...")
+    print(">> Collecting inputs..")
     while len(inputs) < samples:
         needed = samples - len(inputs)
         new_batch = getinputs(
             min(chunksize, needed),
             topics,
-            "You generate a Python list for message inputs.\nPython lists are structured like [string, ...].",
+            "You generate a Python list for message inputs.\nPython lists are structured like [string, ...], and a newline in a string is manually represented using \\n.",
             endpoint, model, apikey, maxoutput
         )
 
@@ -149,7 +149,7 @@ def main():
     if alpaca:
         outputs = []
 
-        print(">> Starting generation for Alpaca-format")
+        print(">> Starting generation for Alpaca-format..")
         for x in range(samples):
             print(f">> Input: {inline(maxlength(inputs[x], 80))}")
 
@@ -158,7 +158,7 @@ def main():
                 msg.append({ "role": "system", "content": systemprompt })
             msg.append({ "role": "user", "content": inputs[x] })
 
-            output = generate(endpoint, model, apikey, msg, 0.7, maxoutput, True)
+            output = generate(endpoint, model, apikey, msg, 0.1, maxoutput, True)
             outputs.append(output)
             data.append({ "instruction": systemprompt, "input": inputs[x], "output": output })
             print(f">> Output: {inline(maxlength(output, 80))}")
@@ -168,12 +168,12 @@ def main():
             with open(saveat, 'w') as f:
                 json.dump(data, f, indent=2)
     else:   
-        print(f">> Starting generation for ShareGPT-format")
+        print(f">> Starting generation for ShareGPT-format..")
         for x in range(samples):
             conversation = [ { "role": "system", "content": systemprompt }, { "role": "user", "content": inputs[x] } ]
 
             while len(conversation) < convlength:
-                conversation.append({ "role": "assistant" if (conversation[-1]["role"] == "user") else "user", "content": generate(endpoint, model, apikey, conversation, 1, maxoutput, True) })
+                conversation.append({ "role": "assistant" if (conversation[-1]["role"] == "user") else "user", "content": generate(endpoint, model, apikey, conversation, 0.1, maxoutput, True) })
                 conversation = inverseroles(conversation)
 
             print(f"\r>> Generated {x + 1}/{samples} conversations.", end="")
