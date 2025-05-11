@@ -5,14 +5,14 @@ A lightweight script to generate and scrape LM text generations. Getting up and 
 
 Alpaca styled:
 
-- [Hamzah-Asadullah/TA-Shiki-2k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-Shiki-2k)
+- [Hamzah-Asadullah/TA-Shiki-2k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-Shiki-2k) (deleted)
 - [Hamzah-Asadullah/TA-4k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-4k) (deleted)
 - [Hamzah-Asadullah/TA-WQS-8k](https://hf.co/datasets/Hamzah-Asadullah/TA-WQS-8k) (deleted)
 - [XeTute/TA-Engineering-4k](https://huggingface.co/datasets/XeTute/TA-Engineering-4k) (deleted)
 - [XeTute/TA-8k](https://huggingface.co/datasets/XeTute/TA-8k) (deleted)
 - [XeTute/TA-SS-15k](https://huggingface.co/datasets/XeTute/TA-SS-15k) (deleted)
 
-You can find a merged `data.json` file of all deleted (including TA-Shiki-2k though) [here](https://huggingface.co/Hamzah-Asadullah/Failed-FPFT-0.6B/resolve/main/data.json).  
+You can find a merged `data.json` file of all deleted [here](https://huggingface.co/Hamzah-Asadullah/Failed-FPFT-0.6B/resolve/main/data.json).  
 ShareGPT-ish styled (they're larger in file size):
 
 - [Hamzah-Asadullah/TypaRP-16x1k](https://huggingface.co/datasets/Hamzah-Asadullah/TypaRP-16x1k)
