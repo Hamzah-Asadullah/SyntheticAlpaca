@@ -5,6 +5,7 @@ A lightweight script to generate and scrape LM text generations. Getting up and 
 
 Alpaca styled:
 
+- [Hamzah-Asadullah/Lovely-.5k](https://huggingface.co/datasets/Hamzah-Asadullah/Lovely-.5k)
 - [Hamzah-Asadullah/TA-Shiki-2k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-Shiki-2k) (deleted)
 - [Hamzah-Asadullah/TA-4k](https://huggingface.co/datasets/Hamzah-Asadullah/TA-4k) (deleted)
 - [Hamzah-Asadullah/TA-WQS-8k](https://hf.co/datasets/Hamzah-Asadullah/TA-WQS-8k) (deleted)
@@ -19,5 +20,5 @@ ShareGPT-ish styled (they're larger in file size):
 - [Hamzah-Asadullah/Vibin-GPT4o](https://huggingface.co/datasets/Hamzah-Asadullah/Vibin-GPT4o) (deleted)
 - [XeTute/TypaRP-12x2k](https://huggingface.co/datasets/XeTute/TypaRP-12x2k)
 
-In total, that leads to ~44k reported samples generated using SyntheticAlpaca. If you want your dataset to be displayed here, you may open an GitHub issue.  
+In total, that leads to ~45k reported samples generated using SyntheticAlpaca. If you want your dataset to be displayed here, you may open an GitHub issue.  
 **Happy coding.**
